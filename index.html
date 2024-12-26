@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="backgroundAnimation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="game">
+                <!-- first row -->
+                <div class="row1">
+                    <div class="box box1">
+                        <div class="start">
+                            <!-- <div class="player1 absolute "></div>
+                            <div class="player2 absolute"></div> -->
+                        </div>
+                    </div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box firstmove icon-parent" id="4"><i class="fa-solid fa-person-walking icon"></i></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                </div>
+                <!-- first col -->
+                <div class="col1">
+                    <div class="box final icon-parent" id="31"><i class="fa-solid fa-arrow-up icon"></i></div>
+                    <div class="box" id="30"></div>
+                    <div class="box" id="29"></div>
+                    <div class="box" id="28"></div>
+                    <div class="box" id="27"></div>
+                    <div class="box" id="26"></div>
+                    <div class="box snake2 icon-parent" id="25"><i class="fa-solid fa-scissors icon"></i></div>
+                </div>
+                <h1 class="msg-container"></h1>
+                <p id="RolledDice">Play</p>
+                <button class="dice">Roll Dice</button>
+                <!-- second col2 -->
+                 <!-- sara icons ko ek class de do or icon ke parents ko ek or class ok -->
+                <div class="col2">
+                    <div class="box" id="9"></div>
+                    <div class="box snake icon-parent" id="10"><i class="fa-solid fa-scissors icon"></i></div>
+                    <div class="box" id="11"></div>
+                    <div class="box" id="12"></div>
+                    <div class="box" id="13"></div>
+                    <div class="box secondmove icon-parent" id="14"><i class="fa-solid fa-person-walking icon"></i></div>
+                    <div class="box" id="15"></div>
+
+                </div>
+                <!-- second row2 -->
+                <div class="row2">
+                    <div class="box" id="24"></div>
+                    <div class="box" id="23"></div>
+                    <div class="box extramove icon-parent" id="22"><i class="fa-solid fa-person-circle-check icon"></i></div>
+                    <div class="box" id="21"></div>
+                    <div class="box" id="20"></div>
+                    <div class="box" id="19"></div>
+                    <div class="box" id="18"></div>
+                    <div class="box" id="17"></div>
+                    <div class="box" id="16"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="_game.js"></script>
+</body>
+
+</html>

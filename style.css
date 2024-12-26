@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    z-index: -1;
+    border: 1px solid #ffffff;
+    margin: 3px;
+    animation: boxesAni 1s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* @keyframes boxesAni {
+    
+} */
+/* icon ke parent ko position relative karo or icon ko absolute */
+
+.icon-parent {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+}
+
+.box1 {
+    border: none;
+    border-radius: 10px;
+    background: red;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: rgb(255, 251, 0);
+    }
+}
+
+.start {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: red;
+    background-color: #f7bb41;
+    height: 40px;
+    width: 40px;
+    display: flex;
+}
+
+.col1 {
+    position: absolute;
+    left: 26.4%;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0;
+}
+
+.col2 {
+    position: absolute;
+    right: 26.4%;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0;
+
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 480px;
+}
+
+.player1 {
+    left: 4px;
+    height: 30px;
+    width: 30px;
+    z-index: 10;
+    background-image: url(assets/red.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.player2 {
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 10;
+    background-image: url(assets/blue.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dice {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #00BFFF;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+.container{
+    padding-top: 30px;
+}
+
+#RolledDice {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    box-shadow: 1px 3px 4px 1px #888888;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    background-color: red;
+
+}
+
+i {
+    font-size: 50px;
+    margin: 4px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.msg-container {
+    width: 465px;
+    height: 50px;
+    position: absolute;
+    top: 17%;
+    left: 32%;
+    color: #ff2368fd;
+    display: none;
+
+}
+
+
+
+.backgroundAnimation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+    background: linear-gradient(90deg, rgb(110, 188, 244) 0%, rgb(153, 153, 244) 35%, rgb(107, 224, 245) 100%);
+}
+
+.backgroundAnimation span {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.backgroundAnimation span:nth-child(1) {
+    top: 12%;
+    left: 2%;
+    animation: animate 10s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(2) {
+    top: 50%;
+    left: 80%;
+    animation: animate 7s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(3) {
+    top: 72%;
+    left: 92%;
+    animation: animate 6s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(4) {
+    top: 87%;
+    left: 12%;
+    animation: animate 10s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(5) {
+    top: 60%;
+    left: 60%;
+    animation: animate 8s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(6) {
+    top: 42%;
+    left: 12%;
+    animation: animate 8s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(7) {
+    top: 22%;
+    left: 82%;
+    animation: animate 10s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(8) {
+    top: 82%;
+    left: 3%;
+    animation: animate 10s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(9) {
+    top: 2%;
+    left: 92%;
+    animation: animate 11s linear infinite;
+}
+
+.backgroundAnimation span:nth-child(10) {
+    top: 39%;
+    left: 32%;
+    animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate {
+    from {
+        height: 40px;
+        width: 40px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        height: 60px;
+        width: 60px;
+        transform: rotate(360deg);
+    }
+
+}
