@@ -205,12 +205,12 @@ button.addEventListener("click", function () {
                 }
                 // }
                 if (player2Position === 4) {
-                    player2Position += 3;
+                    console.log("Extra Step : 3");
                     firstmove.removeChild(player2);
-                    // movePlayer(player2Position.toString(), "playerBlue");
+                    player2Position += 3;
+                    movePlayer(player2Position.toString(), "playerBlue");
                     msg_box.style.display = 'block';
-                    msg_box.innerHTML = `You got 4 extra steps player blue `;
-                    // playerRed = true;
+                    msg_box.innerHTML = ` You got 3 extra steps player Blue `;
                 }
 
                 if (player2Position === 10) {
@@ -226,9 +226,9 @@ button.addEventListener("click", function () {
                     console.log("Extra Step : 2");
                     secondmove.removeChild(player2);
                     player2Position += 2;
-                    movePlayer(player2Position.toString(), "playerRed");
+                    movePlayer(player2Position.toString(), "playerBlue");
                     msg_box.style.display = 'block';
-                    msg_box.innerHTML = ` You got 3 extra steps player red `;
+                    msg_box.innerHTML = ` You got 3 extra steps player Blue `;
                 }
 
                 if (player2Position === 25) {
